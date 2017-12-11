@@ -1,0 +1,460 @@
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    PRODUCT NAME: RESUME
+    AUTHOR: MD Nazrul Islam
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    CSS INDEX
+
+    01 FONTS
+    02 TUPOGRAPHY
+    03 HEADER AREA
+    04 ABOUT AREA
+    05 SKILLS AREA
+    06 RESUME AREA
+    07 TESTIMONIALS AREA
+    08 PORTFOLIO AREA
+    09 CONTACT AREA
+    10 FOOTER AREA
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    01 FONTS
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+@font-face{
+	font-family: 'RobotoBold';
+	src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face{
+	font-family: 'RobotoRegular';
+	src: url(fonts/Roboto-Regular.ttf);
+}
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    02 TUPOGRAPHY
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+*{
+	padding: 0;
+	margin: 0;
+}
+h2{
+	font-family: 'RobotoBold';
+    text-transform: uppercase;
+}
+p{
+	font-family: 'RobotoRegular';
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    03 HEADER AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.header-area{
+	overflow: hidden;
+}
+.owl-carousel{
+    position: relative;
+}
+.owl-dots{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+}
+.owl-dot{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: block;
+    margin: 10px 2px;
+}
+.owl-dots .active{
+    background-color: #fff;
+}
+.header-text{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	color: #fff;
+}
+.header-text h2{
+	font-size: 50px;
+	display: block;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	padding: 10px 5px;
+}
+.header-text button{
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	left: 35%;
+	margin-top: 20px;
+}
+.header-text button:hover{
+	color: #27ae60;
+}
+.menu-area{
+	width: 100%;
+	height: 60px;
+	background-color: #252E30;
+	padding: 20px 0;
+}
+.menu-area ul{
+    display: flex;
+}
+.menu-area ul li{
+    list-style: none;
+}
+.menu-area ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 15px;
+    color: #fff;
+    font-family: 'RobotoBold';
+}
+.menu-area ul li a:hover{
+	color: #27ae60;
+}
+.home-area{
+	width: 100%;
+	height: 200px;
+	background-color: #fff;
+	padding: 50px 0;
+	color: #566366;
+}
+.comment-area{
+    width: 100%;
+    height: 300px;
+    background-color: #F2F2F1;
+    padding: 50px;
+    text-align: center;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    04 ABOUT AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.about-area{
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    background-color: #F2F2F1;
+    color: #566366;
+}
+.about-area h2{
+    text-align: center;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 25px;
+}
+.about-area .about-area-right{
+    padding-top: 50px;
+}
+.about-area .content{
+    padding: 30px;
+}
+.about-area i{
+    color: #27ae60;
+    font-size: 20px;
+    display: inline-block;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    05 SKILLS AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.skill-area{
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    padding-top: 50px;
+    color: #566366;
+}
+.skill-area button{
+    padding: 10px 20px;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+    text-transform: uppercase;
+    background-color: #fff;
+    cursor: pointer;
+}
+.skill-area-left h2{
+    padding-bottom: 20px;
+}
+.skill-area-right h2{
+    padding: 15px 0;
+    font-size: 15px;
+}
+.progress-bar{
+    width: 80%;
+    height: 30px;
+    background-color: #bdc3c7;
+    position: relative;
+}
+.progress-inner{
+    width: 0;
+    height: 30px;
+    background-color: #27ae60;
+    position: absolute;
+}
+.progress-inner p{
+    text-align: right;
+    padding-right: 5px;
+    display: none;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    06 RESUME AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.resume-area{
+    width: 100%;
+    height: 300px;
+    background-color: #F2F2F1;
+    color: #566366;
+    position: relative;
+    padding-top: 30px;
+}
+.resume-area h2{
+    position: absolute;
+    top: 5%;
+    left: 42%;
+}
+.resume-area p{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+}
+.resume-area button{
+    padding: 10px 20px;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+    text-transform: uppercase;
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+
+    07 TESTIMONIALS AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.testimonial-area{
+    width: 100%;
+    height: 1300px;
+    background-color: #fff;
+    color: #566366;
+    padding-top: 50px;
+}
+.edu-area-left h2{
+    padding-bottom: 20px;
+}
+.edu-area-right h2{
+    font-size: 20px;
+}
+.edu-area-right button{
+    padding: 3px 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #27ae60;
+    border: none;
+    margin-bottom: 20px;
+}
+.t-border{
+    padding: 20px 0;
+    border-top: 1px solid #CFCFCF;
+}
+.work-area{
+    border-top: 1px solid #CFCFCF;
+    padding: 50px 0;
+}
+.work-area-left h2{
+    padding-bottom: 20px;
+}
+.work-area-right h2{
+    font-size: 20px;
+}
+.work-area-right button{
+    padding: 3px 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #27ae60;
+    border: none;
+    margin-bottom: 20px;
+}
+.comment-area{
+    width: 100%;
+    height: 300px;
+}
+.comment-area .owl-carousel{
+    position: relative;
+}
+.comment-area .owl-dots{
+    position: absolute;
+    bottom: 2%;
+    left: 10%;
+}
+.comment-area .owl-dot{
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #2ecc71;
+    border-radius: 50%;
+    margin: 30px 2px;
+    display: inline-block;
+}
+.comment-area .owl-dots .active{
+    background-color: #2ecc71;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    08 PORTFOLIO AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.portfolio-area{
+    width: 100%;
+    height: 1100px;
+    color: #fff;
+    padding: 50px 0;
+}
+.p-area-text{
+    text-align: center;
+    color: #566366;
+    padding-bottom: 30px;
+}
+.p-img{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    width: 92%;
+    height: 100%;
+    background-color: rgba(39, 174, 96, 0.5);
+    position: absolute;
+    top: 100%;
+    left: 4%;
+    transition: 1s;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay i{
+    font-size: 30px;
+}
+.p-img:hover .overlay{
+    top: 0;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+
+    09 CONTACT AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.contact-area{
+    width: 100%;
+    height: 600px;
+    background-color: #252E30;
+    padding: 50px 0;
+}
+.contact-area .contact-area-left h2{
+    color: #fff;
+    padding-bottom: 30px;
+}
+.contact-area .contact-area-left p{
+    color: #4B5456;
+}
+.contact-area .contact-area-left p span{
+    color: #fff;
+}
+.contact-area .contact-area-right{
+    color: #fff;
+}
+.contact-area .contact-area-right input{
+    background-color: #4B5456;
+}
+.contact-area .contact-area-right .pass{
+    height: 200px;
+}
+.contact-area .contact-area-right button{
+    background-color: #191F21;
+    border: none;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+
+    10 FOOTER AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.footer-area{
+    width: 100%;
+    height: 200px;
+    background-color: #191F21;
+    color: #474F51;
+    padding: 20px 0;
+    position: relative;
+}
+.footer-area .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-area .icon{
+    position: absolute;
+    top: 40%;
+}
+.footer-area i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #191F21;
+    background-color: #4B5456;
+    padding: 5px 5px;
+    margin: 0 5px;
+}
+.footer-area i:hover{
+    color: #fff;
+}

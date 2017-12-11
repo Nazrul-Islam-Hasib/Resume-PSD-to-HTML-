@@ -1,0 +1,84 @@
+@media all and (max-width: 768px){
+	.owl-dots{
+      position: absolute;
+      top: 50%;
+      right: 10%;
+    }
+    .herder-area{
+    	overflow: hidden;
+    }
+    .header-text{
+	    top: 20%;
+	    left: 30%;
+    }
+    .header-text h2{
+	    font-size: 12px;
+	    border-top: 1px solid #fff;
+	    border-bottom: 1px solid #fff;
+	    padding: 10px 5px;
+    }
+    .header-text button{
+	    padding: 5px 10px;
+	    font-size: 12px;
+	    left: 20%;
+    }
+    .menu-area{
+	    height: 350px;
+    }
+    .menu-area img{
+    	padding-left: 50px;
+    }
+    .menu-area ul{
+        display: block;
+    }
+    .menu-area ul li{
+    	padding-top: 10px;
+    	padding-left: 50px;
+    }
+    .home-area{
+    	height: 550px;
+    }
+    .about-area{
+    	height: 1400px;
+    }
+    .about-area img{
+    	padding: 20px 0;
+    }
+    .about-area .content h2{
+    	font-size: 20px;
+    }
+    .about-area i{
+    	padding-top: 20px;
+    }
+    .skill-area{
+    	height: 900px;
+    }
+    .skill-area-right{
+    	padding: 50px 10px;
+    }
+    .resume-area{
+    	height: 550px;
+    }
+    .resume-area p{
+    	top: 15%;
+    }
+    .resume-area button{
+    	left: 20%;
+    }
+    .testimonial-area{
+    	height: 2250px;
+    }
+    .comment-area{
+    	height: 600px;
+    }
+    .comment-area .owl-dots{
+        top: 95%;
+    }
+    .portfolio-area{
+    	height: 2500px;
+    }
+    .contact-area{
+    	height: 1000px;
+    }
+    
+}
